@@ -25,8 +25,8 @@ Route::resource('users', 'UserController');
 //Accessing the add user form
 Route::get('/users/create', 'UserController@createview');
 
-//for inserting users in the db tbl users
-Route::post('/users/create', 'UserController@create');
+//for inserting users in the db tbl users with an alias 'user.add'
+Route::post('/users/create', 'UserController@create')->name('user.add');
 
 //Accessing the show user form based on its id
 Route::get('users/show/{id}', 'UserController@show');

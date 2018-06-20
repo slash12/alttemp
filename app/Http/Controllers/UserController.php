@@ -34,12 +34,24 @@ class UserController extends Controller
      */
     public function create(Request $request)
     {
+
+        $this->validate($request,
+        [
+            'txtfname' => 'required'
+        ],
+        [
+            'txtfname.required' => 'First Name is required'
+        ]
+    );
+
         $fname = Input::get('txtfname');
         $lname = Input::get('txtlname');
         $uname = Input::get('txtuname');
         $cnum = Input::get('txtcnum');
         $email = Input::get('txtemail');
         $utype = Input::get('radutype');
+
+        
 
         $data = array(
             'firstname' => $fname, 
@@ -52,9 +64,9 @@ class UserController extends Controller
     );
 
 
-     DB::table('users')->insert($data);
+        DB::table('users')->insert($data);
+        return redirect('/users');
 
-    return redirect('/users');
     }
 
     public function createview()

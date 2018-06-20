@@ -8,14 +8,23 @@
                 <div class="card-header">Add User</div>
 
                 <div class="card-body">
-                    <form method="POST" action="">
+                <form method="POST" action="{{route('user.add')}}">
                         @csrf
 
                         <div class="form-group row">
+                            {{-- @if(count($errors) > 0)
+                                @foreach($errors->all() as $error)
+                                    <p class="alert alert-danger">{{$error}}</p>
+                                @endforeach
+                            @endif     --}}
+
                             <label for="fname" class="col-md-4 col-form-label text-md-right">First Name</label>
                             <div class="col-md-6">
                                 <input id="txtfname" type="text" class="form-control" name="txtfname">
-                            </div>
+                                    @if($errors->has('txtfname'))
+                                        <span class="help-block">{{$errors->first('txtfname')}}</span>
+                                    @endif
+                            </div>  
                         </div>
 
                         <div class="form-group row">
