@@ -30,3 +30,9 @@ Route::post('/users/create', 'UserController@create');
 
 //Accessing the show user form based on its id
 Route::get('users/show/{id}', 'UserController@show');
+
+// //Restricting access to pages unless logged in
+// Route::get('/users', function () {
+  
+// })->middleware('auth');
+
