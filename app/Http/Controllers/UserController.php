@@ -7,6 +7,9 @@ use DB;
 use Illuminate\Support\Facades\Input;
 use Auth;
 use Illuminate\Support\Facades\Validator;
+use App\Mail\sendMail;
+use Mail;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -60,13 +63,18 @@ class UserController extends Controller
             'contactnum' => $cnum, 
             'admin' => $utype,
             'email' => $email,
-            'password' => '1234'
+            'password' => Hash::make($generatedPassword)
     );
 
 
         DB::table('users')->insert($data);
         return redirect('/users');
 
+    }
+
+    public function sendEmail($genPass,$email)
+    {
+        Mail::send(new sendMail($genPass,$email));
     }
 
     public function createview()

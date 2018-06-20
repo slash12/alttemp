@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+ Route::get('/home', 'HomeController@index')->name('home');
 
 //it access all the function simultaneously
 Route::resource('users', 'UserController');
@@ -30,3 +30,9 @@ Route::post('/users/create', 'UserController@create')->name('user.add');
 
 //Accessing the show user form based on its id
 Route::get('users/show/{id}', 'UserController@show');
+
+// //Restricting access to pages unless logged in
+// Route::get('/users', function () {
+  
+// })->middleware('auth');
+
