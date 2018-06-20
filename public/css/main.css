@@ -1,0 +1,61 @@
+nav.navbar.navbar-default.navbar-static-top 
+{
+    background-color: #000 !important;
+}
+
+.nav>li>a, div#wrapper
+{
+    background-color: #212121 !important;
+}
+
+div#page-wrapper
+{
+    background-color: #eceff1 !important;
+    padding-top:8%;
+}
+
+a 
+{
+    color: #00A45B;
+}
+
+a.navbar-brand span
+{
+    font-family: 'Bitter';
+    color:oldlace;
+    font-size:126%;
+    font-weight: bold;
+}
+
+a.navbar-brand small
+{
+    color:#fbfbfbfa;
+    font-size: 60%;
+    font-family:'Kaushan Script';
+}
+
+
+a.navbar-brand span img
+{
+    width: 9%;
+    margin-top: -1.5%;
+}
+
+.btn-primary
+{
+    background-color: #439047 !important;
+    border-color: #439047 !important;
+}
+
+.btn-info
+{
+    background-color: #ffb746 !important;
+    border-color: #ffb746 !important;
+}
+
+h1
+{
+    font-family:'Patua One';
+}
+
+
