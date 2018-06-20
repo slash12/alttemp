@@ -54,7 +54,8 @@ class UserController extends Controller
         $email = Input::get('txtemail');
         $utype = Input::get('radutype');
 
-        
+        $generatedPassword=str_random(8);
+        self::sendEmail($generatedPassword ,$email);
 
         $data = array(
             'firstname' => $fname, 

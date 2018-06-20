@@ -12,6 +12,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     public function __construct()
     {
+        //Redirect activated or not if logging
         $this->middleware('auth');
     }
 
