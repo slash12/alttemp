@@ -40,10 +40,12 @@ class UserController extends Controller
 
         $this->validate($request,
         [
-            'txtfname' => 'required'
+            'txtfname' => 'required',
+            'txtlname' => 'required'
         ],
         [
-            'txtfname.required' => 'First Name is required'
+            'txtfname.required' => 'First Name is required',
+            'txtlname.required' => 'Last Name is required'
         ]
     );
 
@@ -87,7 +89,7 @@ class UserController extends Controller
     public function delete($id)
     {
         DB::table('users')->where('id', $id)->delete();
-        return redirect('/users');
+        return redirect('/users');      
     }
 
 

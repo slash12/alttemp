@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+<a href="/users" class="btn btn-default">Back</a>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -11,18 +12,18 @@
                 <form method="POST" action="{{route('user.add')}}">
                         @csrf
 
-                        <div class="form-group row">
+                        
                             {{-- @if(count($errors) > 0)
                                 @foreach($errors->all() as $error)
                                     <p class="alert alert-danger">{{$error}}</p>
                                 @endforeach
                             @endif     --}}
-
+                            <div class="form-group row {{ $errors->has('txtfname') ? ' has-error' : '' }}">
                             <label for="fname" class="col-md-4 col-form-label text-md-right">First Name</label>
                             <div class="col-md-6">
                                 <input id="txtfname" type="text" class="form-control" name="txtfname">
                                     @if($errors->has('txtfname'))
-                                        <span class="help-block">{{$errors->first('txtfname')}}</span>
+                                        <span class="msg-error">{{$errors->first('txtfname')}}</span>
                                     @endif
                             </div>  
                         </div>

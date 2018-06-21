@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Admin</title>
+    <title>View Users</title>
 
     <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Bitter|Kaushan+Script">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     -->
@@ -46,13 +46,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            <a class="navbar-brand" href="index.html"><span> ALT</span> </a>
+            <a class="navbar-brand" href="index.html"><span class="alt"> ALT</span> </a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
@@ -98,12 +98,12 @@
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                     <!-- /.dropdown-messages -->
                 </li>
                 <!-- /.dropdown -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-tasks">
@@ -177,12 +177,12 @@
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                     <!-- /.dropdown-tasks -->
                 </li>
                 <!-- /.dropdown -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
@@ -237,7 +237,7 @@
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                     <!-- /.dropdown-alerts -->
                 </li>
                 <!-- /.dropdown -->
@@ -246,12 +246,18 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+<<<<<<< HEAD
+                        </li> -->
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+=======
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="/logoutform"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+>>>>>>> 7efde71437b5041a996861f7245793ac212b3c7a
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -274,30 +280,30 @@
                             </div>
                             <!-- /input-group -->
                         </li> --}}
-                        <li>
+                        <!-- <li>
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fas fa-user"></i> <span class="text-sidebar">User</span><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="flot.html">Add Users</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="morris.html">Morris.js Charts</a>
-                                </li>
+                                </li> -->
                             </ul>
                             <!-- /.nav-second-level -->
-                        </li>
-                        <li>
+                        <!-- </li> -->
+                        <!-- <li>
                             <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
+                        </li> -->
+                        <!-- <li> -->
+                            <!-- <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a> -->
+                            <!-- <ul class="nav nav-second-level">
                                 <li>
                                     <a href="panels-wells.html">Panels and Wells</a>
                                 </li>
@@ -316,10 +322,10 @@
                                 <li>
                                     <a href="grid.html">Grid</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                             <!-- /.nav-second-level -->
-                        </li>
-                        <li>
+                      <!-- </li>   -->
+                        <!-- <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -343,13 +349,13 @@
                                         <li>
                                             <a href="#">Third Level Item</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                     <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
+                                <!-- </li> -->
+                            <!-- </ul> -->
                             <!-- /.nav-second-level -->
-                        </li>
-                        <li>
+                        <!-- </li> -->
+                        <!-- <li>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -358,9 +364,9 @@
                                 <li>
                                     <a href="login.html">Login Page</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                             <!-- /.nav-second-level -->
-                        </li>
+                        <!-- </li> -->
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -412,7 +418,8 @@
     <script type="text/javascript">
         $('#tlbuser').DataTable({
         responsive: true,
-        "pageLength": 3
+        "pageLength": 3,
+        "bLengthChange": false
         }); 
     </script>
 
@@ -421,5 +428,38 @@
       <span class="text-muted">Copyright &#169; Astek 2018</span>
     </div>
   </footer>
+
+  <script>
+
+    $('#delete').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) 
+            var userid = button.data('userid') 
+            var modal = $(this)
+            modal.find('.modal-body #userid').val(userid);
+      })
+  
+  
+     $('#edit').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) 
+        
+        var lname = button.data('mylastname') 
+        var email = button.data('myemail') 
+        var cnum = button.data('mycontactnum') 
+        
+        var userid = button.data('userid') 
+        var modal = $(this)
+        modal.find('.modal-body #email').val(email);
+        
+        modal.find('.modal-body #lastname').val(lname);
+        modal.find('.modal-body #contactnum').val(cnum);
+      
+        modal.find('.modal-body #userid').val(userid);
+  })
+  
+      
+        
+    
+    </script>
 </body>
 </html>
+

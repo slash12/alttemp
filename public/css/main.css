@@ -25,7 +25,7 @@ nav.navbar.navbar-default.navbar-static-top
 
 }
 button{
-    background-color: lightblue ;
+    background-color: #337ab7 ;
     margin-top: -5px;
     margin-left: 0px;
     margin-bottom:10px;
@@ -38,12 +38,7 @@ button{
 
 
 
-.nav>li>a, div#wrapper
-{
-    /* background-color: #654d4d8a !important;  side bar code */
-     background-color: #333 !important; 
-    
-}
+
 
 /* nav div.navbar-default.sidebar
 {
@@ -56,16 +51,16 @@ button{
 }
 
 ul#side-menu.nav li a{
-    background-color: #918f8f8a !important;
+    background-color: #3e2d2dc2  !important;
 }
 
 div#wrapper{
-    background-color: #918f8f8a !important;
+    background-color: #3e2d2dc2  !important;
 }
 
 div#page-wrapper
 {
-    background-color: #eceff1a9 !important;
+    background-color: #eeeeeeeb !important;
     padding-top:2%;
     
 }
@@ -79,8 +74,13 @@ nav div.navbar-default.sidebar{
 a 
 {
     /* color: #00A45B; */
-    color: #333;
+    color: rgb(245, 237, 237);
     margin-bottom: -1px!important;
+}
+i.fas.fa-user::before
+{
+    color:  rgb(245, 237, 237);
+    /* color: #Bcc3c4; */
 }
 
 i.fa.fa-dashboard,fa-fw::before
@@ -150,10 +150,8 @@ a.navbar-brand span
     color:oldlace;
     font-size:220%;
     font-weight: bold;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin-left: 10%;
+    margin-bottom: 3%;
     
 }
 
@@ -174,7 +172,7 @@ a.navbar-brand span img
 
 .btn-primary
 {
-    background-color: #439047 !important;
+    background-color: #82b74b !important;
     border-color: #439047 !important;
 }
 
@@ -189,3 +187,61 @@ h1
     font-family:'Patua One';
 }
 
+.edit{
+    background-color: #ff7b25!important;
+}
+
+.delete{
+    background-color:#ff3300;
+}
+div.sidebar-nav.navbar-collapse{
+    margin-top: -1px;
+}
+
+element.style {
+}
+a.navbar-brand span {
+    font-family: 'Bitter';
+    color: oldlace;
+    font-size: 220%;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-default .navbar-brand {
+    color: #777;
+}
+a:focus, a:hover {
+    color: #e8eaeb;
+    text-decoration: underline;
+
+}
+.navbar-brand {
+    line-height: 29px!important;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: #333!important;
+}
+ 
+.adduser_btn{
+    font-family:'Patua One';
+    color: #23527c;
+}
+.btn_blue{
+    padding: -2px;
+}
+
+.text-sidebar
+{
+    padding-left:5%;
+    font-size: 19px;
+}

@@ -36,3 +36,8 @@ Route::get('users/show/{id}', 'UserController@show');
   
 // })->middleware('auth');
 
+Route::get('/logoutform', function () {
+    Auth::logout();
+    return redirect('/login');
+});
+
