@@ -12,7 +12,8 @@
 
     <title>Admin</title>
 
-    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Bitter|Kaushan+Script">    
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Bitter|Kaushan+Script">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     -->
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 
@@ -27,7 +28,11 @@
     <link rel="stylesheet" href="{{asset('css/morris.css')}}">
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+    <!-- <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}"> -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -41,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            <a class="navbar-brand" href="index.html"><span><img src="{{asset('images/astek.png')}}">  ALT</span> <small>Astek Life Team</small></a>
+            <a class="navbar-brand" href="index.html"><span> ALT</span> </a>
             </div>
             <!-- /.navbar-header -->
 
@@ -409,27 +414,6 @@
         responsive: true,
         "pageLength": 3
         }); 
-
-    $('#edit').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget) 
-    var lname = button.data('mylastname') 
-    var email = button.data('myemail') 
-    var cnum = button.data('mycontactnum') 
-    var userid = button.data('userid') 
-    var modal = $(this)
-    modal.find('.modal-body #email').val(email);
-    modal.find('.modal-body #lastname').val(lname);
-    modal.find('.modal-body #contactnum').val(cnum);
-    modal.find('.modal-body #userid').val(userid);
-    });
-
-    $('#delete').on('show.bs.modal', function (event) {
-          var button = $(event.relatedTarget) 
-          var userid = button.data('userid') 
-          var modal = $(this)
-          modal.find('.modal-body #userid').val(userid);
-    })
-
     </script>
 
 <footer class="footer">

@@ -12,6 +12,8 @@
     <!-- /.col-lg-12 -->
 </div> --}}
 
+<button class="btn"><i class="far fa-plus-square"></i></button>
+
 <table id="tlbuser" style="width:100%" class="table table-striped">
     <thead>
         <tr>
