@@ -15,7 +15,4 @@ class Controller extends BaseController
         //Redirect activated or not if logging
         $this->middleware('auth');
     }
-
-
-
 }
