@@ -12,7 +12,7 @@
     <!-- /.col-lg-12 -->
 </div> --}}
 
-<button class="btn"><i class="far fa-plus-square"></i></button><span><strong>Add users</strong></span>
+<button onclick="location.href='/users/create'" class="btn"><i class="far fa-plus-square btn_blue"></i></button><span class="adduser_btn">ADD USER</span>
 
 <table id="tlbuser" style="width:100%" class="table table-striped">
     <thead>
@@ -39,9 +39,9 @@
             </td>
             <td>
                 <a href="/users/show/{{$user->id}}" class="btn btn-primary">Show</a> &nbsp;|&nbsp;
-                <button class="btn btn-info"  data-userid={{$user->id}} data-toggle="modal" data-mycontactnum="{{$user->contactnum}}" data-mylastname="{{$user->lastname}}"data-myemail="{{$user->email}}" data-target="#edit">Edit</button>
+                <a class="btn btn-info"  data-userid="{{$user->id}}" data-toggle="modal" data-mycontactnum="{{$user->contactnum}}" data-mylastname="{{$user->lastname}}"data-myemail="{{$user->email}}" data-target="#edit">Edit</a>
                 &nbsp;|&nbsp;
-                <button class="btn btn-danger" data-userid={{$user->id}} data-toggle="modal" data-target="#delete"> Delete</button>
+                <a class="btn btn-danger" data-userid="{{$user->id}}" data-toggle="modal" data-target="#delete"> Delete</a>
             </td>
         </tr>
         @endforeach
@@ -98,5 +98,37 @@
     </div>
   </div>
 
-@endsection
 
+
+<script>
+
+  $('#delete').on('show.bs.modal', function (event) {
+          var button = $(event.relatedTarget) 
+          var userid = button.data('userid') 
+          var modal = $(this)
+          modal.find('.modal-body #userid').val(userid);
+    })
+
+
+   $('#edit').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) 
+      
+      var lname = button.data('mylastname') 
+      var email = button.data('myemail') 
+      var cnum = button.data('mycontactnum') 
+      
+      var userid = button.data('userid') 
+      var modal = $(this)
+      modal.find('.modal-body #email').val(email);
+      
+      modal.find('.modal-body #lastname').val(lname);
+      modal.find('.modal-body #contactnum').val(cnum);
+    
+      modal.find('.modal-body #userid').val(userid);
+})
+
+    
+      
+  
+  </script>
+  @endsection
