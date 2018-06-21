@@ -175,17 +175,9 @@ a.navbar-brand span img
    
 }
 
-.btn-primary
-{
-    background-color: #439047 !important;
-    border-color: #439047 !important;
-}
 
-.btn-info
-{
-    background-color: #ffb746 !important;
-    border-color: #ffb746 !important;
-}
+
+
 
 h1
 {
@@ -238,5 +230,32 @@ h1
 i.far.fa-plus-square.btn_blue:before{
     margin-bottom: 10%;
 } 
+.btn-danger {
+    background-color: #983e3b!important;
+}  
+.btn-danger:hover {
+    background-color:	#FF0000!important;
+ 
+}
+.btn-info
+{
+    background-color: 	#cf8d14 !important;
+    border-color: 	#FFA500 !important;
+}
+.btn-info:hover
+{
+    background-color: #FFD700 !important;
+    border-color: 	#FFD700 !important;
     
+}
+.btn-primary
+{
+    background-color: #439047 !important;
+    border-color: #439047 !important;
+}
 
+.btn-primary:hover
+{
+    background-color: #1dad0a !important;
+    border-color: #1dad0a !important;
+}
