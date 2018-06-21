@@ -201,7 +201,7 @@ h1
     font-family: "Patua One";
     font-weight: bold;
     color: rgb(35, 82, 124);
-    font-size: 138%;
+    font-size: 16px;
     padding-left: 23px;
     /* padding: 4% */
     position: absolute;
@@ -260,4 +260,9 @@ i.far.fa-plus-square.btn_blue:before{
 {
     background-color: #1dad0a !important;
     border-color: #1dad0a !important;
+}
+
+#tlbuser
+{
+    font-size:16px !important;
 }
