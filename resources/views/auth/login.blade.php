@@ -3,7 +3,7 @@
 {{-- @section('content') --}}
 <link rel="stylesheet" href="{{asset('css/login.css')}}">
 <body>
-        <div class="card-header loginbar">{{ __('ALT Login') }}</div> 
+        {{-- <div class="card-header loginbar">{{ __('ALT Login') }}</div>  --}}
 
         <div  class="loginbox">
         
@@ -32,8 +32,8 @@
         <div class="form-group row">
             <label for="password" id="txtpassword" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
-            <div class="col-md-6">
-                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+            <div class="col-md-6" >
+                <input id="password" type="password"  class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                 @if ($errors->has('password'))
                     <span class="invalid-feedback">
@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div class="form-group row">
+        {{-- <div class="form-group row">
             <div class="col-md-6 offset-md-4">
                 <div class="checkbox">
                     <label class="checkbox">
@@ -51,17 +51,17 @@
                     </label>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="form-group row mb-0">
-            <div class="col-md-8 offset-md-4">
-                <button type="submit" class="btn btn-success">
+            <div class="col-md-8 offset-md-4 loginButton">
+                <button type="submit" class="btn btn-success lgbuttonSize">
                     {{ __('Login') }}
                 </button>
 
-                <a class="btn btn-link" id="forgotPassword"  href="{{ route('password.request') }}" >
+                {{-- <a class="btn btn-link" id="forgotPassword"  href="{{ route('password.request') }}" >
                     {{ __('Forgot Your Password?') }}
-                </a>
+                </a> --}}
             </div>
         </div>
     </form>

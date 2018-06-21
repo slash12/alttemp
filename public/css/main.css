@@ -69,7 +69,7 @@ div#page-wrapper
 {
     background-color: #fff !important;
     padding-top:2%;
-    min-height:532px !important;
+    min-height:556px !important;
     
 }
 nav div.navbar-default.sidebar{
@@ -209,7 +209,9 @@ h1
 
 .confot
 {
-    padding-left:34% !important;
+    padding-left:42% !important;
+    background-color: #fff !important;
+    width:100%!important;
 }
 
 .table
