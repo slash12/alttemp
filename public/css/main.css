@@ -38,12 +38,13 @@ button{
 
 
 
-.nav>li>a, div#wrapper
+.nav>li>a
 {
     /* background-color: #654d4d8a !important;  side bar code */
      background-color: #333 !important; 
     
 }
+
 
 /* nav div.navbar-default.sidebar
 {
@@ -67,6 +68,7 @@ div#page-wrapper
 {
     background-color: #eceff1a9 !important;
     padding-top:2%;
+    min-height:532px !important;
     
 }
 nav div.navbar-default.sidebar{
@@ -189,3 +191,17 @@ h1
     font-family:'Patua One';
 }
 
+
+ body{
+     overflow-x: hidden; 
+} 
+
+.confot
+{
+    padding-left:34% !important;
+}
+
+.table
+{
+    margin-bottom: 0px;
+}

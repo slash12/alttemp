@@ -12,7 +12,7 @@
     <!-- /.col-lg-12 -->
 </div> --}}
 
-<button class="btn"><i class="far fa-plus-square"></i></button>
+<button class="btn"><i class="far fa-plus-square"></i></button><span><strong>Add users</strong></span>
 
 <table id="tlbuser" style="width:100%" class="table table-striped">
     <thead>
