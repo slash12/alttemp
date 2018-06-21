@@ -39,9 +39,9 @@
             </td>
             <td>
                 <a href="/users/show/{{$user->id}}" class="btn btn-primary">Show</a> &nbsp;|&nbsp;
-                <button class="btn btn-info"  data-userid="{{$user->id}}" data-toggle="modal" data-mycontactnum="{{$user->contactnum}}" data-mylastname="{{$user->lastname}}"data-myemail="{{$user->email}}" data-target="#edit">Edit</button>
+                <a class="btn btn-info"  data-userid="{{$user->id}}" data-toggle="modal" data-mycontactnum="{{$user->contactnum}}" data-mylastname="{{$user->lastname}}"data-myemail="{{$user->email}}" data-target="#edit">Edit</a>
                 &nbsp;|&nbsp;
-                <button class="btn btn-danger" data-userid="{{$user->id}}" data-toggle="modal" data-target="#delete"> Delete</button>
+                <a class="btn btn-danger" data-userid="{{$user->id}}" data-toggle="modal" data-target="#delete"> Delete</a>
             </td>
         </tr>
         @endforeach
