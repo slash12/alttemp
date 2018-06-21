@@ -40,10 +40,12 @@ class UserController extends Controller
 
         $this->validate($request,
         [
-            'txtfname' => 'required'
+            'txtfname' => 'required',
+            'txtlname' => 'required'
         ],
         [
-            'txtfname.required' => 'First Name is required'
+            'txtfname.required' => 'First Name is required',
+            'txtlname.required' => 'Last Name is required'
         ]
     );
 
