@@ -58,6 +58,7 @@ button{
 
 ul#side-menu.nav li a{
     background-color: #3e2d2deb  !important;
+    color:#fff;
 }
 
 div#wrapper{
@@ -213,14 +214,17 @@ h1
     /* padding: 4% */
     position: absolute;
 }
-.btn_blue{
-    /* padding:none!important; */
+
+.confot
+{
+    padding-left:34% !important;
 }
 
 .table
 {
-    padding-left:5%;
+    padding-left:2%;
     font-size: 19px;
+    margin-bottom: 0px;
 }
 .btn-default{
     padding:none;
@@ -234,3 +238,5 @@ h1
 i.far.fa-plus-square.btn_blue:before{
     margin-bottom: 10%;
 } 
+    
+
