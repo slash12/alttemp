@@ -98,5 +98,37 @@
     </div>
   </div>
 
-@endsection
 
+
+<script>
+
+  $('#delete').on('show.bs.modal', function (event) {
+          var button = $(event.relatedTarget) 
+          var userid = button.data('userid') 
+          var modal = $(this)
+          modal.find('.modal-body #userid').val(userid);
+    })
+
+
+   $('#edit').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) 
+      
+      var lname = button.data('mylastname') 
+      var email = button.data('myemail') 
+      var cnum = button.data('mycontactnum') 
+      
+      var userid = button.data('userid') 
+      var modal = $(this)
+      modal.find('.modal-body #email').val(email);
+      
+      modal.find('.modal-body #lastname').val(lname);
+      modal.find('.modal-body #contactnum').val(cnum);
+    
+      modal.find('.modal-body #userid').val(userid);
+})
+
+    
+      
+  
+  </script>
+  @endsection
