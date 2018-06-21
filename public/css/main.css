@@ -36,8 +36,6 @@ button{
     z-index: inherit -1; 
 } */
 
-
-
 .nav>li>a
 {
     /* background-color: #654d4d8a !important;  side bar code */
@@ -45,20 +43,24 @@ button{
     
 }
 
-
 /* nav div.navbar-default.sidebar
 {
     margin-bottom:4% !important;
 } */
 
-.sidebar
+/* .sidebar
 {
     margin-top:10% !important;
-}
+} */
 
 ul#side-menu.nav li a{
     background-color: #3e2d2deb  !important;
     color:#fff;
+}
+
+ul#side-menu.nav.in
+{
+    margin-top:-1%;
 }
 
 div#wrapper{
