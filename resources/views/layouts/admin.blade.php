@@ -249,15 +249,9 @@
                         <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-<<<<<<< HEAD
-                        </li> -->
-                        <!-- <li class="divider"></li> -->
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-=======
                         </li>
-                        <li class="divider"></li>
+                        <li class="divider"></li> -->
                         <li><a href="/logoutform"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
->>>>>>> 7efde71437b5041a996861f7245793ac212b3c7a
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -287,11 +281,11 @@
                             <a href="#"><i class="fas fa-user"></i> <span class="text-sidebar">User</span><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Add Users</a>
+                                    <a href="/users/create">Add Users</a>
                                 </li>
-                                <!-- <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li> -->
+                                <li>
+                                    <a href="/users">View Users</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         <!-- </li> -->

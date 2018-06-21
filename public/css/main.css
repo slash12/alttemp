@@ -25,7 +25,7 @@ nav.navbar.navbar-default.navbar-static-top
 
 }
 button{
-    background-color: #337ab7 ;
+    background-color: #fff ;
     margin-top: -5px;
     margin-left: 0px;
     margin-bottom:10px;
@@ -51,16 +51,16 @@ button{
 }
 
 ul#side-menu.nav li a{
-    background-color: #3e2d2dc2  !important;
+    background-color: #3e2d2deb  !important;
 }
 
 div#wrapper{
-    background-color: #3e2d2dc2  !important;
+    background-color: #3e2d2deb  !important;
 }
 
 div#page-wrapper
 {
-    background-color: #eeeeeeeb !important;
+    background-color: #fff !important;
     padding-top:2%;
     
 }
@@ -233,11 +233,16 @@ a:focus, a:hover {
 }
  
 .adduser_btn{
-    font-family:'Patua One';
-    color: #23527c;
+    font-family: "Patua One";
+    font-weight: bold;
+    color: rgb(35, 82, 124);
+    font-size: 138%;
+    padding-left: 23px;
+    /* padding: 4% */
+    position: absolute;
 }
 .btn_blue{
-    padding: -2px;
+    /* padding:none!important; */
 }
 
 .text-sidebar
@@ -245,3 +250,15 @@ a:focus, a:hover {
     padding-left:5%;
     font-size: 19px;
 }
+.btn-default{
+    padding:none;
+     background-color: #8ad0de!important;
+    border-color: #337ab7 !important;
+}
+.fa-plus-square:before{
+    color: #fff;
+    background-color: #337ab7;
+}
+i.far.fa-plus-square.btn_blue:before{
+    margin-bottom: 10%;
+} 
