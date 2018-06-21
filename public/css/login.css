@@ -1,0 +1,55 @@
+
+     .center {
+    margin: auto;
+    width: 55%;
+    border: 3px solid green;
+    border-radius: 1.5%;
+    padding-top: 4%;
+    padding-bottom:3%;
+    padding-left:10%;
+    padding-right:10%;
+    box-shadow: 5px 10px #567E3A	;
+    
+}
+        
+.loginbox{
+    padding-top:120px;
+}
+
+body{
+    background-color: #333 !important;
+
+}
+#txtusername,#txtpassword{
+    color:white;
+    font-weight:bolder;
+    font-size: 110%;
+    
+
+}
+
+.checkbox{
+    color:whitesmoke;
+    font-weight:bolder;
+}
+
+
+
+#username,#password{
+    color:green !important;
+    font-weight: bolder;
+}
+
+#forgotPassword{
+    color:white;
+    font-size: 80%
+}
+
+.loginbar{
+    background-color: #0A0A0A !important;
+    color:white !important;
+    font-family: 'Bitter';
+    font-size:150%;
+    font-weight: bold;
+}
+    

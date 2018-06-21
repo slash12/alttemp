@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body style="overflow-y:hidden";>
     <div id="wrapper">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -246,11 +246,11 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        {{-- <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li> -->
+                        </li> 
+                        <li class="divider"></li>--}}
                         <li><a href="/logoutform"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
@@ -270,8 +270,9 @@
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
                                 </button>
-                            </span>
-                            </div>
+                            </span></div>
+                            <!-- <a href="/users/create">Add User</a> -->
+                            
                             <!-- /input-group -->
                         </li> --}}
                         <!-- <li>
@@ -381,6 +382,7 @@
             
 
             @yield('content')
+            
             <!-- /Enter content here 140618 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
                 </div>
                 <!-- /.col-lg-4 -->
@@ -416,9 +418,10 @@
         "bLengthChange": false
         }); 
     </script>
-
+</body>
 <footer class="footer">
-    <div class="container">
+    <div class="container confot" >
+    <img src="  {{asset('images/astek.png')}}" alt="Astek Logo" height="42" width="42" > 
       <span class="text-muted">Copyright &#169; Astek 2018</span>
     </div>
   </footer>
