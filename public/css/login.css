@@ -1,15 +1,26 @@
 
      .center {
     margin: auto;
-    width: 55%;
-    border: 3px solid green;
+    width: 40%;
+    border: 3px solid #567E3A !important;
     border-radius: 1.5%;
     padding-top: 4%;
     padding-bottom:3%;
-    padding-left:10%;
+    padding-left:5%;
     padding-right:10%;
-    box-shadow: 5px 10px #567E3A	;
+    box-shadow: 5px 10px  #82b74b	;
     
+}
+
+
+.centerreg{
+    margin: auto;
+    width: 120% !important;
+    /* border: 3px solid #567E3A !important; */
+    padding-top: 4%;
+    padding-bottom:3%;
+    padding-left:35%;
+    padding-right:10%;
 }
         
 .loginbox{
@@ -25,6 +36,7 @@ body{
     font-weight:bolder;
     font-size: 110%;
     
+    
 
 }
 
@@ -36,8 +48,10 @@ body{
 
 
 #username,#password{
-    color:green !important;
+    /* color:green !important; */
+    color:#82b74b !important;
     font-weight: bolder;
+    width:150%;
 }
 
 #forgotPassword{
@@ -52,4 +66,19 @@ body{
     font-size:150%;
     font-weight: bold;
 }
-    
+
+.loginButton{
+ padding-left:20% !important;
+ padding-top:3% !important;
+}
+.lgbuttonSize{
+    padding: 10px 40px !important ;
+}
+/* #txtfname,#txtlname{    
+    width:150% !important;
+
+} */
+
+.radioButton{
+    padding-left:38% !important;
+}

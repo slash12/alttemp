@@ -1,4 +1,5 @@
 @extends('layouts.admin')
+<link rel="stylesheet" href="{{asset('css/login.css')}}">
 
 @section('content')
 <div class="container">
@@ -6,7 +7,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Add User</div>
+                {{-- <div class="card-header">Add User</div> --}}
+                <div class="centerreg">
 
                 <div class="card-body">
                 <form method="POST" action="{{route('user.add')}}">
@@ -21,7 +23,7 @@
                             <div class="form-group row {{ $errors->has('txtfname') ? ' has-error' : '' }}">
                             <label for="fname" class="col-md-4 col-form-label text-md-right">First Name</label>
                             <div class="col-md-6">
-                                <input id="txtfname" type="text" class="form-control" name="txtfname">
+                                <input id="txtfname" type="text" class="form-control " name="txtfname">
                                     @if($errors->has('txtfname'))
                                         <span class="msg-error">{{$errors->first('txtfname')}}</span>
                                     @endif
@@ -56,8 +58,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label><input type="radio" name="radutype" value="0">User</label>
+                        <div class="form-group row  radioButton" >
+                            <label><input  type="radio" name="radutype" value="0">User</label>
                             <label><input type="radio" name="radutype" value="1">Admin</label>
                         </div>
 
@@ -68,6 +70,7 @@
                         </div>
                     </form>
                 </div>
+            </div>
             </div>
         </div>
     </div>
