@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+<a href="/users" class="btn btn-default">Back</a>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

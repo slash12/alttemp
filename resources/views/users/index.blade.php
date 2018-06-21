@@ -12,7 +12,7 @@
     <!-- /.col-lg-12 -->
 </div> --}}
 
-<button class="btn"><i class="far fa-plus-square"></i></button>
+<button onclick="location.href='/users/create'" class="btn"><i class="far fa-plus-square btn_blue"></i></button><span class="adduser_btn">ADD USER</span>
 
 <table id="tlbuser" style="width:100%" class="table table-striped">
     <thead>
@@ -38,10 +38,10 @@
                 {{$user->lastname}}
             </td>
             <td>
-                <a href="/users/show/{{$user->id}}" class="btn btn-primary">Show</a> &nbsp;|&nbsp;
-                <button class="btn btn-info"  data-userid={{$user->id}} data-toggle="modal" data-mycontactnum="{{$user->contactnum}}" data-mylastname="{{$user->lastname}}"data-myemail="{{$user->email}}" data-target="#edit">Edit</button>
+                <button href="/users/show/{{$user->id}}" class="btn btn-primary">Show</button> &nbsp;|&nbsp;
+                <button class="btn btn-info edit"  data-userid={{$user->id}} data-toggle="modal" data-mycontactnum="{{$user->contactnum}}" data-mylastname="{{$user->lastname}}"data-myemail="{{$user->email}}" data-target="#edit">Edit</button>
                 &nbsp;|&nbsp;
-                <button class="btn btn-danger" data-userid={{$user->id}} data-toggle="modal" data-target="#delete"> Delete</button>
+                <button class="btn btn-danger delete" data-userid={{$user->id}} data-toggle="modal" data-target="#delete"> Delete</button>
             </td>
         </tr>
         @endforeach
