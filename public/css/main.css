@@ -217,7 +217,9 @@ h1
 
 .confot
 {
-    padding-left:34% !important;
+    padding-left:42% !important;
+    background-color: #fff !important;
+    width:100%!important;
 }
 
 .table
