@@ -15,9 +15,8 @@
 
 .centerreg{
     margin: auto;
-    width: 120% !important;
-    /* border: 3px solid #567E3A !important; */
-    padding-top: 4%;
+    width: 100% !important;
+     /* border: 3px solid #567E3A !important;   */
     padding-bottom:3%;
     padding-left:35%;
     padding-right:10%;
@@ -82,3 +81,14 @@ body{
 .radioButton{
     padding-left:38% !important;
 }
+.regbutton{
+    padding-left: 46% !important;
+    padding-top: 10% !important;
+}
+.regbuttonsize{
+    padding: 5px 25px !important ;
+}
+/* .btn .btn-primary.regbuttonsize{
+    padding-left:10% !important;
+
+} */

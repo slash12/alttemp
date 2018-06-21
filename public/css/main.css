@@ -230,9 +230,18 @@ h1
 }
 .btn-default{
     padding:none;
-     background-color: #8ad0de!important;
-    border-color: #337ab7 !important;
+    background-color: #439047!important;
+    border-color: #439047 !important;
+    color: #fff;
 }
+.btn-default:hover{
+    
+    background-color: #34aa3a!important;
+    border-color: #34aa3a !important;
+    color: #fff;
+    
+}
+
 .fa-plus-square:before{
     color: #fff;
     background-color: #337ab7;
