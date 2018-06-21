@@ -65,13 +65,13 @@
 
                         <div class="form-group row {{ $errors->has('radutype') ? ' has-error' : '' }} radioButton">
                             <label><input type="radio" name="radutype" value="0">User</label>
-                            <label><input type="radio" name="radutype" value="1">Admin</label>
+                            <label><input type="radio" name="radutype" value="1">Admin</label><br>
                                     @if($errors->has('radutype'))
                                         <span class="msg-error">{{$errors->first('radutype')}}</span>
                                     @endif
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="form-group row mb-0 btncontainer">
                             <div class="col-md-6 offset-md-4 regbutton">
                                 <button type="submit" class="btn btn-primary regbuttonsize">Add User</button>
                             </div>
