@@ -246,18 +246,12 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        {{-- <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-<<<<<<< HEAD
-                        </li> -->
-                        <!-- <li class="divider"></li> -->
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-=======
-                        </li>
-                        <li class="divider"></li>
+                        </li> 
+                        <li class="divider"></li>--}}
                         <li><a href="/logoutform"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
->>>>>>> 7efde71437b5041a996861f7245793ac212b3c7a
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->

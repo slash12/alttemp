@@ -4,7 +4,8 @@
 <link rel="stylesheet" href="{{asset('css/login.css')}}">
 <body>
         <div class="card-header loginbar">{{ __('ALT Login') }}</div> 
-<div  class="loginbox">
+
+        <div  class="loginbox">
         
         
 <div class="center">
