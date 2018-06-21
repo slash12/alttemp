@@ -253,6 +253,8 @@
                         <li class="divider"></li>--}}
                         <li><a href="/logoutform"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
+                        <li><a href="/password/reset"><i class="fa fa-sign-out fa-fw"></i> Change Password</a>
+                        </li>
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
