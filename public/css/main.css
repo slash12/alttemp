@@ -177,17 +177,9 @@ a.navbar-brand span img
    
 }
 
-.btn-primary
-{
-    background-color: #439047 !important;
-    border-color: #439047 !important;
-}
 
-.btn-info
-{
-    background-color: #ffb746 !important;
-    border-color: #ffb746 !important;
-}
+
+
 
 h1
 {
@@ -211,7 +203,7 @@ h1
     font-family: "Patua One";
     font-weight: bold;
     color: rgb(35, 82, 124);
-    font-size: 138%;
+    font-size: 16px;
     padding-left: 23px;
     /* padding: 4% */
     position: absolute;
@@ -232,9 +224,18 @@ h1
 }
 .btn-default{
     padding:none;
-     background-color: #8ad0de!important;
-    border-color: #337ab7 !important;
+    background-color: #439047!important;
+    border-color: #439047 !important;
+    color: #fff;
 }
+.btn-default:hover{
+    
+    background-color: #34aa3a!important;
+    border-color: #34aa3a !important;
+    color: #fff;
+    
+}
+
 .fa-plus-square:before{
     color: #fff;
     background-color: #337ab7;
@@ -242,5 +243,37 @@ h1
 i.far.fa-plus-square.btn_blue:before{
     margin-bottom: 10%;
 } 
+.btn-danger {
+    background-color: #983e3b!important;
+}  
+.btn-danger:hover {
+    background-color:	#FF0000!important;
+ 
+}
+.btn-info
+{
+    background-color: 	#cf8d14 !important;
+    border-color: 	#FFA500 !important;
+}
+.btn-info:hover
+{
+    background-color: #FFD700 !important;
+    border-color: 	#FFD700 !important;
     
+}
+.btn-primary
+{
+    background-color: #439047 !important;
+    border-color: #439047 !important;
+}
 
+.btn-primary:hover
+{
+    background-color: #1dad0a !important;
+    border-color: #1dad0a !important;
+}
+
+#tlbuser
+{
+    font-size:16px !important;
+}
