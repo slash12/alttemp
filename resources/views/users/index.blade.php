@@ -12,7 +12,7 @@
     <!-- /.col-lg-12 -->
 </div> --}}
 
-<button onclick="location.href='/users/create'" class="btn"><i class="far fa-plus-square btn_blue"></i></button><span class="adduser_btn">ADD USER</span>
+<div class="adduser_btn"><button onclick="location.href='/users/create'" class="btn"><i class="far fa-plus-square btn_blue"></i></button>ADD USER</div>
 
 <table id="tlbuser" style="width:100%" class="table table-striped">
     <thead>

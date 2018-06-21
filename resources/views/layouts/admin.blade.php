@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body style="overflow-y:hidden";>
     <div id="wrapper">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -270,8 +270,9 @@
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
                                 </button>
-                            </span>
-                            </div>
+                            </span></div>
+                            <!-- <a href="/users/create">Add User</a> -->
+                            
                             <!-- /input-group -->
                         </li> --}}
                         <!-- <li>
@@ -281,11 +282,11 @@
                             <a href="#"><i class="fas fa-user"></i> <span class="text-sidebar">User</span><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Add Users</a>
+                                    <a href="/users/create">Add Users</a>
                                 </li>
-                                <!-- <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li> -->
+                                <li>
+                                    <a href="/users">View Users</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         <!-- </li> -->
@@ -381,6 +382,7 @@
             
 
             @yield('content')
+            
             <!-- /Enter content here 140618 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
                 </div>
                 <!-- /.col-lg-4 -->
@@ -416,9 +418,10 @@
         "bLengthChange": false
         }); 
     </script>
-
+</body>
 <footer class="footer">
-    <div class="container">
+    <div class="container confot" >
+    <img src="  {{asset('images/astek.png')}}" alt="Astek Logo" height="42" width="42" > 
       <span class="text-muted">Copyright &#169; Astek 2018</span>
     </div>
   </footer>
