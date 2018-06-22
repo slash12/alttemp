@@ -285,5 +285,13 @@ i.far.fa-plus-square.btn_blue:before{
 }
 
 a.navbar-brand span{
-    font-size: 200%;
+    font-size: 200%;}
+    
+.msg-error{
+    color: #A9445F;
+}
+
+.btncontainer
+{
+    height: 7%;
 }

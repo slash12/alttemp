@@ -40,13 +40,13 @@ class UserController extends Controller
 
         $this->validate($request,
         [
-            'txtfname' => 'required',
-            'txtlname' => 'required'
-        ],
-        [
-            'txtfname.required' => 'First Name is required',
-            'txtlname.required' => 'Last Name is required'
-        ]
+            'txtfname' => 'required|string|max:255',
+            'txtlname' => 'required|string|max:255',
+            'txtuname' => 'required|string|max:255',
+            'txtcnum' => 'required|integer',
+            'txtemail' => 'required|string|email|max:255',
+            'radutype' => 'required|boolean',
+        ]       
     );
 
         $fname = Input::get('txtfname');
