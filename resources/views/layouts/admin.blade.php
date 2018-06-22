@@ -421,7 +421,7 @@
 </body>
 <footer class="footer">
     <div class="container confot" >
-    <img src="  {{asset('images/astek.png')}}" alt="Astek Logo" height="42" width="42" > 
+    <img src="  {{asset('images/astek.png')}}" alt="Astek Logo" class="logo" height="42" width="42" > 
       <span class="text-muted">Copyright &#169; Astek 2018</span>
     </div>
   </footer>
