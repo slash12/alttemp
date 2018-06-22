@@ -15,11 +15,14 @@
 
 .centerreg{
     margin: auto;
-    width: 100% !important;
-     /* border: 3px solid #567E3A !important;   */
+    width: 115% !important;
+    border: 3px solid #567E3A !important;  
+    box-shadow: 5px 10px  #82b74b	; 
+    border-radius: 1.5%;
+    padding-top: 10%;
     padding-bottom:3%;
-    padding-left:35%;
-    padding-right:10%;
+    padding-left:15%;
+    padding-right:15%;
 }
         
 .loginbox{
@@ -92,3 +95,63 @@ body{
     padding-left:10% !important;
 
 } */
+
+.space{
+    padding-left: 15%;
+}
+
+ .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color:#439047 ;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100px;
+    height:30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3px;
+    padding-bottom: 3px;
+ 
+    
+  }
+   
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    
+  }
+  
+   .button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+    
+  }
+  
+   .button:hover span {
+    padding-left: 25px;
+    
+  }
+  
+   .button:hover span:after {
+    opacity: 1;
+    left: 0;
+    
+  }
+
+  .button:hover{
+    background-color: #1dad0a !important;
+    border-color: #1dad0a !important;
+  }
+
+#btnBack{
+    padding-top: 0.5%;
+}
