@@ -1,5 +1,5 @@
 
-     .center {
+     .loginwrapper {
     margin: auto;
     width: 40%;
     border: 3px solid #567E3A !important;
@@ -9,6 +9,7 @@
     padding-left:5%;
     padding-right:10%;
     box-shadow: 5px 10px  #82b74b	;
+    background-color: #4A4848 !important;
     
 }
 
@@ -85,7 +86,7 @@ body{
     padding-left:38% !important;
 }
 .regbutton{
-    padding-left: 46% !important;
+        padding-left: 46% !important;
     padding-top: 10% !important;
 }
 .regbuttonsize{

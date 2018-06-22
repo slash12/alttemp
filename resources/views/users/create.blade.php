@@ -14,57 +14,65 @@
                 <div class="card-body">
                 <form method="POST" action="{{route('user.add')}}">
                         @csrf
-
-                        
-                            {{-- @if(count($errors) > 0)
-                                @foreach($errors->all() as $error)
-                                    <p class="alert alert-danger">{{$error}}</p>
-                                @endforeach
-                            @endif     --}}
                             <div class="form-group row {{ $errors->has('txtfname') ? ' has-error' : '' }}">
                             <label for="fname" class="col-md-4 col-form-label text-md-right">First Name</label>
                             <div class="col-md-6">
-                                <input id="txtfname" type="text" class="form-control " name="txtfname">
+                                <input id="txtfname" type="text" class="form-control" name="txtfname">
                                     @if($errors->has('txtfname'))
                                         <span class="msg-error">{{$errors->first('txtfname')}}</span>
                                     @endif
                             </div>  
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row {{ $errors->has('txtlname') ? ' has-error' : '' }}">
                             <label for="lname" class="col-md-4 col-form-label text-md-right">Last Name</label>
                             <div class="col-md-6">
                                 <input id="txtlname" type="text" class="form-control" name="txtlname">
+                                    @if($errors->has('txtlname'))
+                                        <span class="msg-error">{{$errors->first('txtlname')}}</span>
+                                    @endif
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row {{ $errors->has('txtuname') ? ' has-error' : '' }}">
                             <label for="uname" class="col-md-4 col-form-label text-md-right">Username</label>
                             <div class="col-md-6">
                                 <input id="txtuname" type="text" class="form-control" name="txtuname">
+                                    @if($errors->has('txtuname'))
+                                        <span class="msg-error">{{$errors->first('txtuname')}}</span>
+                                    @endif
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row {{ $errors->has('txtcnum') ? ' has-error' : '' }}">
                             <label for="cnum" class="col-md-4 col-form-label text-md-right">Contact Number </label>
                             <div class="col-md-6">
                                 <input id="txtcnum" type="text" class="form-control" name="txtcnum">
+                                    @if($errors->has('txtcnum'))
+                                        <span class="msg-error">{{$errors->first('txtcnum')}}</span>
+                                    @endif
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row {{ $errors->has('txtemail') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
                             <div class="col-md-6">
                                 <input id="txtemail" type="email" class="form-control" name="txtemail">
+                                     @if($errors->has('txtemail'))
+                                        <span class="msg-error">{{$errors->first('txtemail')}}</span>
+                                    @endif
                             </div>
                         </div>
 
-                        <div class="form-group row  radioButton" >
-                            <label><input  type="radio" name="radutype" value="0">User</label>
-                            <label><input type="radio" name="radutype" value="1">Admin</label>
+                        <div class="form-group row {{ $errors->has('radutype') ? ' has-error' : '' }} radioButton">
+                            <label><input type="radio" name="radutype" value="0">User</label>
+                            <label><input type="radio" name="radutype" value="1">Admin</label><br>
+                                    @if($errors->has('radutype'))
+                                        <span class="msg-error">{{$errors->first('radutype')}}</span>
+                                    @endif
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="form-group row mb-0 btncontainer">
                             <div class="col-md-6 offset-md-4 regbutton">
                                 <button type="submit" class="btn btn-primary regbuttonsize">Add User</button>
                             </div>
