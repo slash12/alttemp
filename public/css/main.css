@@ -1,6 +1,7 @@
 nav.navbar.navbar-default.navbar-static-top 
 {
-    background-color: #000000!important;
+    /* background-color: #8eaf00!important; */
+    background: linear-gradient(#64790a, #8eaf00);
     /* font-family:'Garamond'; */
 
     font-family:'Mf Sippin On Sunshine';
@@ -8,6 +9,7 @@ nav.navbar.navbar-default.navbar-static-top
 
     font-size: 1.0em;
     min-height: 60px;
+    border-bottom: 2px solid #8b0707;
 
     /* display: block;
     width: 15px;
@@ -39,7 +41,7 @@ button{
 .nav>li>a
 {
     /* background-color: #654d4d8a !important;  side bar code */
-     background-color: #333 !important; 
+     /* background-color: #8eaf00 !important;  */
     
 }
 
@@ -57,6 +59,11 @@ ul#side-menu.nav li a{
     background-color: #202020 !important;
     color:#fff;
 }
+ul#side-menu.nav li a:hover{
+    background-color: #3b2323 !important;
+    color:#fff;
+    transition: all 0.7s;
+}
 
 ul#side-menu.nav.in
 {
@@ -69,7 +76,7 @@ div#wrapper{
 
 div#page-wrapper
 {
-    background-color: #fff !important;
+    background-color: #eaeaea !important;
     padding-top:2%;
     min-height:556px !important;
     
@@ -77,7 +84,7 @@ div#page-wrapper
 nav div.navbar-default.sidebar{
     /* margin-bottom: none; */
      padding-top:0px;
-     margin-top: 60px!important;
+     margin-top: 64px!important;
 
 }
 
@@ -138,12 +145,12 @@ i.fa.fa-bell.fa-fw::before
 i.fa.fa-user.fa-fw::before
 {
    
-    color: #Bcc3c4;
+    color: #202020;
 }
 i.fa.fa-caret-down::before
 {
     
-    color: #Bcc3c4;
+    color: #202020;
 }i.fa.fa-envelope.fa-fw::before
 {
     color: #Bcc3c4;
@@ -196,7 +203,7 @@ h1
     line-height: 29px!important;
 }
 .nav>li>a:focus, .nav>li>a:hover{
-    background-color: #333!important;
+    background-color: #8eaf00!important;
 }
  
 .adduser_btn{
@@ -245,32 +252,33 @@ i.far.fa-plus-square.btn_blue:before{
 } 
 .btn-danger {
     background-color: #983e3b!important;
+    border-color: #a33733 !important;
 }  
 .btn-danger:hover {
-    background-color:	#FF0000!important;
+    background-color:	#c93833!important;
  
 }
 .btn-info
 {
-    background-color: 	#cf8d14 !important;
-    border-color: 	#FFA500 !important;
+    background-color: #64790a !important;
+    border-color: #537d06 !important;
 }
 .btn-info:hover
 {
-    background-color: #FFD700 !important;
-    border-color: 	#FFD700 !important;
+    background-color: #8eaf00 !important;
+    border-color: #70aa05 !important;
     
 }
 .btn-primary
 {
-    background-color: #439047 !important;
-    border-color: #439047 !important;
+    background-color: #285a86 !important;
+    border-color: #285a86 !important
 }
 
 .btn-primary:hover
 {
-    background-color: #1dad0a !important;
-    border-color: #1dad0a !important;
+    background-color: #337ab7 !important;
+    border-color: #337ab7 !important
 }
 
 #tlbuser
@@ -294,4 +302,30 @@ a.navbar-brand span{
 .btncontainer
 {
     height: 7%;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #285a86 !important;
+    border-color: #285a86 !important
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+span.text-sidebar{
+    margin-left: 14px;
+}
+.addUserIcon{
+    background-image: url("storage/addUser.ico");
+
 }
