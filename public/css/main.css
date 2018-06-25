@@ -229,7 +229,7 @@ h1
     font-size: 19px;
     margin-bottom: 0px;
 }
-.btn-default{
+/* .btn-default{
     padding:none;
     background-color: #439047!important;
     border-color: #439047 !important;
@@ -241,7 +241,10 @@ h1
     border-color: #34aa3a !important;
     color: #fff;
     
-}
+} */
+
+
+
 
 .fa-plus-square:before{
     color: #fff;

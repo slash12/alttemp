@@ -3,10 +3,11 @@
 
 @section('content')
 <div class="container">
-<a href="/users" class="btn btn-default">Back</a>
+    <a href="/users" class="button" name="btnBack" id="btnBack" style="vertical-align:middle" ><span> Back</span></a>
+    
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card space">
                 {{-- <div class="card-header">Add User</div> --}}
                 <div class="centerreg">
 
